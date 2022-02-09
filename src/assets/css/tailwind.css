@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Clases Personalizadas*/
+.item-menu {
+    @apply flex p-3 items-center hover:bg-gray-300 rounded-xl hover:font-bold transition duration-500 hover:shadow-xl
+}
+
+.item-menu-container{
+    @apply bg-white shadow-sm p-2 rounded-lg mr-3 group-hover:bg-indigo-500
+}
+
+.item-menu-icon{
+    @apply h-4 w-4 text-black group-hover:text-white
+}
+
+.item-menu-text{
+    @apply hidden md:block text-white group-hover:text-indigo-500
+}
+
+.item-menu-active{
+    @apply bg-gray-300 font-bold shadow-xl
+}
