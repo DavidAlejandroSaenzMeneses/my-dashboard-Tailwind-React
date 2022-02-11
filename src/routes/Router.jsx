@@ -11,19 +11,19 @@ import Balance from '../pages/balance/Balance.jsx';
 
 export default function Router() {
     return (
-        <BrowserRouter>
-            <Header />
-            <section className="w-full">
-                <div className=" flex h-screen w-screen">
-                    <Sidebar  className="left" />
-                    <div className="right w-full sm:w-3/4 lg:w-5/6 text-center p-2 bg-gray-100 bg-contain">
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/home" element={<Home />} />
-                            <Route path="/balance" element={<Balance />} />
-                        </Routes>
-                    </div>
+        <BrowserRouter className="w-screen h-screen">
+            
+            <section className="flex w-screen h-screen">
+                <Sidebar className="left" />
+                <div className="right h-screen w-full sm:w-3/4 lg:w-5/6 text-center bg-gray-200 container overflow-auto">
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/balance" element={<Balance />} />
+                    </Routes>
                 </div>
+
             </section>
 
         </BrowserRouter>

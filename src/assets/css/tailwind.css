@@ -4,7 +4,7 @@
 
 /*Clases Personalizadas*/
 .item-menu {
-    @apply flex p-3 items-center hover:bg-gray-300 rounded-xl hover:font-bold transition duration-500 hover:shadow-xl
+    @apply flex p-3 items-center w-full hover:bg-gray-200 rounded-tl-xl hover:font-bold transition duration-500 hover:shadow-xl
 }
 
 .item-menu-container{
@@ -12,7 +12,7 @@
 }
 
 .item-menu-icon{
-    @apply h-4 w-4 text-black group-hover:text-white
+    @apply h-3 w-3 text-black group-hover:text-white
 }
 
 .item-menu-text{
